@@ -4,7 +4,7 @@
     "description": "Save SVG file to set of PNG files, used by Android/iOS/OSX/Windows resources.",
     "version": "1.0.0",
     "publisher": "earthengine",
-    "icon": "https://github.com/earthengine/svgasset/raw/master/images/icon.png",
+    "icon": "https://raw.githubusercontent.com/earthengine/svgasset/master/images/icon.png",
     "engines": {
         "vscode": "^1.17.0"
     },
