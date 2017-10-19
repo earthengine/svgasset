@@ -1,0 +1,48 @@
+{
+    "name": "svgasset",
+    "displayName": "svgasset",
+    "description": "Save SVG file to set of PNG files, used by Android/iOS/OSX/Windows resources.",
+    "version": "1.0.0",
+    "publisher": "earthengine",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.saveAsPNG",
+        "onCommand:extension.saveiOSAsset"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.saveAsPNG",
+                "title": "Save SVG as PNG"
+            },
+            {
+                "command": "extension.saveiOSAsset",
+                "title": "Save SVG as iOS icon set"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.5.3",
+        "vscode": "^1.1.5",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "async": "^2.5.0",
+        "svg-to-png": "^3.1.2",
+        "xmldoc": "^1.1.0"
+    }
+}
