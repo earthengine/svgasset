@@ -1,5 +1,7 @@
 # Use SVG for your app assets source
 
+<img align="left" src="images/icon.png" width="40">
+
 **svgasset** is a simple extension allows you save any SVG files to PNG file. Right now, it ships with two basic commands:
 
 * Use `Save SVG as PNG` command to save the editing SVG to PNG file. It uses the view box width and height as the image size.
