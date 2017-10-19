@@ -1,6 +1,6 @@
 # Use SVG for your app assets source
 
-<img align="left" src="images/icon.png" width="40">
+<img align="left" src="https://raw.githubusercontent.com/earthengine/svgasset/master/images/icon.png" width="40">
 
 **svgasset** is a simple extension allows you save any SVG files to PNG file. Right now, it ships with two basic commands:
 
