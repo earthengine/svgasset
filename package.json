@@ -3,7 +3,7 @@
     "displayName": "svgasset",
     "description": "Save SVG file to set of PNG files, used by Android/iOS/OSX/Windows resources.",
     "version": "1.0.0",
-    "publisher": "earthengine",
+    "publisher": "earthengine@gmail.com",
     "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.17.0"
