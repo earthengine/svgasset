@@ -59,11 +59,11 @@ export class PngSaver {
 
   public async saveiOSAsset() {
     const pngdir = path.dirname(this.fileName);
+    const targetdir = path.resolve(pngdir, "./AppIcon.appiconset");
 
     vscode.window.showInformationMessage(
       "Convertion started: " + this.fileName
     );
-    const targetdir = path.resolve(pngdir, "./AppIcon.appiconset");
 
     if (!fs.existsSync(targetdir)) {
       fs.mkdirSync(targetdir);
@@ -86,11 +86,11 @@ export class PngSaver {
         filename: targetFn + ".png",
         scale: e.scale + "x",
       });
+    });
 
-      var json = JSON.stringify(contents);
-      fs.writeFile(path.resolve(targetdir, "Contents.json"), json, () =>
-        vscode.window.showInformationMessage("All done!")
-      );
+    var json = JSON.stringify(contents);
+    fs.writeFile(path.resolve(targetdir, "Contents.json"), json, function () {
+      vscode.window.showInformationMessage("All saved to " + targetdir);
     });
   }
 

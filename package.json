@@ -2,7 +2,7 @@
   "name": "svgasset",
   "displayName": "svgasset",
   "description": "Save SVG file to set of PNG files, used by Android/iOS/OSX/Windows resources.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "earthengine",
   "icon": "images/icon.png",
   "engines": {
